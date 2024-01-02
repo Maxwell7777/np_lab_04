@@ -1,2 +1,2 @@
-dfgsdfgshhsgshshstshtsfghs	afdgagfhdfdgafgsfdgsdgfghdftest versji pythona zle
+dfgfhsfhsdfgsdfgshhsgshshstshtsfghs	afdgagfhdfdgafgsfdgsdgfghdftest versji pythona zle
 22
