@@ -1,1 +1,1 @@
-asdasdgadsgasfdgfgxdxvxzbtest sprawdzania wersji pythona.
+dfgsdfasdasdgadsgasfdgfgxdxvxzbtest sprawdzania wersji pythona.
