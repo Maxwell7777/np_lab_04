@@ -2,13 +2,15 @@ name: check_python_version
 
 on:
   push:
+    branches:
+      - check_python_version
 
 jobs:
   check-python-version:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ustawianie uzywana wersje pythona
+      - name: ustaw wersje pythona 3.11
         uses: actions/setup-python@v3
         with:
           python-version: '3.11'
