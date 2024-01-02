@@ -1,2 +1,2 @@
-test versji pythona zle
+gfghdftest versji pythona zle
 22
