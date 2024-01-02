@@ -1,0 +1,1 @@
+test sprawdzania wersji pythona.
