@@ -22,7 +22,7 @@ jobs:
         run: ls
 
       - name: Aktywacja Pythona
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
 
