@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Aktualizacja pipy
+      - name: Aktualijzacja pipy
         run: python -m pip install --upgrade pip
 
       - name: Instalacja flake8
