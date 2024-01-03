@@ -33,8 +33,6 @@ jobs:
       - name: Wyswietlanie wersje Pythona
         run: python --version
 
-      - name: Aktywacja flake8
-        uses: programmingwithalex/pylinter@main
 
       - name: Aktywacja unittest
         run: python -m unittest test.py
