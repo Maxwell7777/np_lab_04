@@ -29,9 +29,12 @@ jobs:
       - name: Aktualizacja pipy
         run: python -m pip install --upgrade pip
 
-      - name: Instalacja flake8 i unittesta
+      - name: Instalacja flake8
         run: |
           python -m pip install flake8
+
+      - name: Instalacja unitesta
+        run: |
           python -m pip install unittest
 
       - name: Wyswietlanie wersje Pythona
