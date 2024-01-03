@@ -13,9 +13,6 @@ jobs:
       matrix:
         python-version: [3.9, 3.10, 3.11]
         os: [ubuntu-latest, windows-latest]
-        exclude:
-          - python-version: 3.10
-            os: ubuntu-latest
 
     steps:
       - name: Ściąganie repozytorium.
