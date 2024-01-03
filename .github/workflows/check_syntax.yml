@@ -29,4 +29,4 @@ jobs:
         run: python --version
 
       - name: Wywołanie flake8
-        run: flake8
+        uses: TrueBrain/actions-flake8@v2
