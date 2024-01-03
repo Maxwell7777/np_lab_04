@@ -33,4 +33,4 @@ jobs:
 
       - name: Wywołanie flake8
         run: |
-          flake8
+          flake8 .
