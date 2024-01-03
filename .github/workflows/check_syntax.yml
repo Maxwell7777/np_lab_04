@@ -32,5 +32,4 @@ jobs:
           python --version
 
       - name: Wywołanie flake8
-        run: |
-          flake8
+        uses: py-actions/flake8@v2
