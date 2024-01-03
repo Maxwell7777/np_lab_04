@@ -9,7 +9,7 @@ def multiply_numbers(a,b):
 
 def divide_numbers(a, b):
     if b== 0:
-        raise ValueError("DDDzielenie przez zero jest niedozwolone.")
+        raise ValueError("DDDzielenie przez zero jest niedozwolonee.")
     return a /b
 
 if __name__ == "__main__":
