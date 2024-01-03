@@ -2,6 +2,8 @@ name: check_python_version
 
 on:
   push:
+    branches:
+      - check_python_version
 
 jobs:
   check-python-version:
@@ -9,7 +11,7 @@ jobs:
 
     steps:
       - name: Ustawianie uzywana wersje pythona
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v3
         with:
           python-version: '3.11'
 
