@@ -29,12 +29,4 @@ jobs:
         run: python --version
 
       - name: Wywołanie flake8
-        run: |
-          git diff --name-only HEAD^..HEAD > changed_files.txt
-          
-          while IFS= read -r file; do
-            if [[ $file == *".py" ]]; then
-              echo "Running flake8 for file: $file"
-              flake8 "$file"
-            fi
-          done < changed_files.txt
+        run: flake8
