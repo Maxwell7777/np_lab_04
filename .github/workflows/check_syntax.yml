@@ -1,34 +1,32 @@
-name: Flake8 Check
+name: check_syntax
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - check_syntax
 
 jobs:
-  flake8:
+  check-syntax:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.9, "3.10", 3.11]
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x' # Wybierz odpowiednią wersję Pythona
+      - name: Aktualizowanie pipy
+        run: python -m pip install --upgrade pip
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install flake8
+      - name: Instalowanie flake8
+        run: python -m pip install flake8
 
-    - name: Determine changed Python files
-      id: get_changed_files
-      run: |
-        echo "::set-output name=changed_files::$(git diff --name-only --diff-filter=ACMRTUXB ${{ github.event.before }} ${{ github.sha }} | grep '\.py$')"
+      - name: Wyswietlenie wersji Pythona
+        run: python --version
 
-    - name: Run Flake8 on changed files
-      run: |
-        changed_files=$(echo "${{ steps.get_changed_files.outputs.changed_files }}")
-        if [ -n "$changed_files" ]; then
-          flake8 $changed_files
-        else
-          echo "No Python files changed."
-        fi
+      - name: Wywołanie flake8
+        run: flake8
