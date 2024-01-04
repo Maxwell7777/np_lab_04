@@ -34,4 +34,4 @@ jobs:
 
 
       - name: Aktywacja unittest
-        run: python -m unittest test.py
+        run: python -m unittest
