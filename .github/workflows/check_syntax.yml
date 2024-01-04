@@ -37,7 +37,7 @@ jobs:
         run: python --version
 
       - name: Uruchamianie flake8
-        uses: programmingwithalex/pylinter@main
+        run: python -m flake8
 
       - name: Uruchamianie unittest
         run: python -m unittest
