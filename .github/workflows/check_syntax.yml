@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: testowe
-        run: cat test.py
+        run: cat app.py
 
       - name: Aktywacja Pythona
         uses: actions/setup-python@v3
