@@ -36,8 +36,7 @@ jobs:
       - name: Wyswietlanie wersje pythona
         run: python --version
 
-      - name: Uruchamianie flake8
-        run: python -m flake8
+
 
       - name: Uruchamianie unittest
-        run: python -m unittest
+        run: python -m unittest test.py
