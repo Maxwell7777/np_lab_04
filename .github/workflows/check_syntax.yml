@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Pobieranie repozytorium
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       - name: Ustawianie srodowiska Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5

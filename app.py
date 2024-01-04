@@ -23,4 +23,7 @@ if __name__ == "__main__":
     print(f"Odejmowanie: {subtract_numbers(num1, num2)}")
     print(f"Mnożenie: {multiply_numbers(num1, num2)}")
     print(f"Dzielenie: {divide_numbers(num1, num2)}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 58a5a5a02c9096a265f7ba8f642463d88606b3e9
